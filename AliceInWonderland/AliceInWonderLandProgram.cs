@@ -9,6 +9,10 @@ namespace AliceInWonderland
         public static void Main()
         {
             // TODO: Prompt the user for a string within the first sentence of Alice in Wonderland to search for within this string.
+            Console.WriteLine("What word are you looking for? ");
+            string word = Console.ReadLine();
+
+            Console.Write(Match(word));
 
             Console.ReadLine();
         }
@@ -17,7 +21,10 @@ namespace AliceInWonderland
 
         public static bool Match(string search)
         {
-            return Alice.IndexOf(search, StringComparison.OrdinalIgnoreCase) >= 0;
+
+           
+                return Alice.IndexOf(search, StringComparison.OrdinalIgnoreCase) >= 0;
+          
         }
     }
 }
